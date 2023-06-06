@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.75);
+}
+img{
+  width: 80%;
+  height: 60%;
+}
+a,
+a:visited {
+  color: inherit;
+}
+
+#score {
+  position: absolute;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9em;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  max-width: 100px;
+  text-align: center;
+  line-height: 1.6em;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.controls {
+  display: flex;
+  position: fixed;
+  top: 50px;
+  left: 95%;
+  float: left ;
+}
+#controls {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 40px;
+  display: none;
+}
+.pause_play{
+  position: fixed;
+}
+.pause_play .play{
+  display: none;
+}
+.pause_play .settings{
+  display: none;
+}
+
+#controls #buttons {
+  display: flex;
+  width: 80px;
+}
+
+#instructions {
+  position: absolute;
+  height: 80%;
+  width: 70%;
+  top: 25px;
+  margin-left: 200px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+#instructions>div{
+  margin: 15px;
+}
+#controls button {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+.controls-right button{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.controls-top button{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.results {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.75);
+  display: none;
+  z-index: 51;
+}
+
+.results .content {
+  text-align: center;
+  max-width: 350px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.delreset{
+  border: none;
+  border-radius: 5px;
+}
+.interval >button{
+  margin: 5px 10px;
+  padding: 5px 10px;
+}
+.interva{
+  text-align: center;
+}
+@media (min-width: 225px) {
+  #score {
+    font-size: 1.5em;
+    max-width: 150px;
+  }
+  #controls {
+ 
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+  }
+  .controls-right {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+  .controls-left{
+    position: fixed;
+    bottom: 150px;
+    left: 50px;
+  }
+  .controls-top {
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+  }
+}
+@media (min-width: 425px) {
+  #score {
+    font-size: 1.5em;
+    max-width: 150px;
+  }
+
+  #controls {
+ 
+    display: flex;
+  }
+  .controls-right {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    
+  }
+  .controls-left{
+    position: fixed;
+    bottom: 150px;
+    left: 50px;
+  }
+  .controls-top {
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+  }
+}

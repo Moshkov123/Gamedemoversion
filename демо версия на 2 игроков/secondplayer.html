@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Игра</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="score">Нажмите ВВЕРХ</div>
+<div id="instructions" class="interva">
+  <div> <p>Нажмите ВВЕРХ, чтобы начать. Избегайте столкновения с другим машинами, ускоряясь
+    или замедление с помощью клавиш "ВВЕРХ" и "ВНИЗ". Испльзуйте клавишу "T" для турбо режима и клавишу "R" для включении задний передачи.</p></div>
+    <div class="interval"> 
+      <p>выберите сложность</p>
+      <form action="index.html">
+        <button class="delreset">
+          <p>На 1 Игрока</p>
+        </button>
+      </form>
+  </div>
+    <div> <img src="img/reklama.jfif" ></div>
+</div>
+
+<div id="controls">
+  <div class="flex">
+    <div id="buttons">
+      <button id="accelerate">
+        <svg width="30" height="30" viewBox="0 0 20 20">
+          <g transform="rotate(0, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" />
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div id="buttons">
+      <button id="decelerate">
+        <svg width="30" height="30" viewBox="0 0 20 20">
+          <g transform="rotate(180, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" /></g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="controls-top flex">
+  <div class="pause_play">
+    <div id="buttons" style="top: -430px; position: relative;">
+      <button id="pauseplay">
+        <svg class="pause" width="30" height="30" viewBox="0 0 20 20">
+          <g transform="rotate(0, 5,5)">
+            <path d="M15,5 L18,5 L18,18 L15,18 " />
+            <path d="M5,5 L8,5 L8,18 L5,18 " />
+          </g>
+        </svg>
+        <svg class="play" width="30" height="30" viewBox="0 0 20 20">
+          <g transform="rotate(0, 5,5)">
+            <path d="M5,5 L5,20 L13,12.5 L5,5 " />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="controls-left flex">
+  <div class="pause_play">
+    <div id="buttons" style="top: -430px; position: relative;">
+      <button id="add-car">
+        <svg class="pause" width="30" height="30" viewBox="0 0 20 20">
+          <g transform="rotate(0, 5,5)">
+            <path d="M10,5 L13,5 L13,20 L10,20 " />
+            <path d="M5,11 L5,14 L18,14 L18,11" />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="controls-right flex">
+  <button id="turbo" >
+    <svg width="30" height="30" viewBox="0 0 20 20">
+      <g transform="rotate(0, 5,5)">
+        <path d="M3,3 L10,3 L10,5 L3,5 " />
+        <path d="M5,5 L8,5 L8,13 L5,13 " />
+      </g>
+    </svg>
+  </button>
+  <button id="revers" >
+    <svg width="30" height="30" viewBox="0 0 20 20">
+      <g transform="rotate(0, 5,5)">
+        <path d="M3,3 L10,3 L10,5 L3,5 " />
+        <path d="M3,3 L3,15 L5,15 L5,3 " />
+        <path d="M8,3 L10,3 L10,8 L8,10 " />
+        <path d="M5,8 L10,8 L10,10 L5,10 " />
+        <path d="M5,10 L10,15 L5,8" />
+      </g>
+    </svg>
+  </button>
+</div>
+
+<div id="results" class="results">
+  <div class="content">
+    <h1 style="color: brown;">вы проиграли</h1>
+    <p> ВЫ набрали : <span class="price_result">0</span> очков</p>
+    <p> Рекорд : <span class="record1">0</span> очков</p>
+    <button id="delreset" class="delreset">
+      <p>Начать заново</p>
+    </button>
+    <div class="interval"> 
+      <form action="index.html">
+        <button class="delreset">
+          <p>На 1 Игрока</p>
+        </button>
+      </form>
+   </div>
+  </div>
+</div>
+<div id="victory" class="results">
+  <div class="content">
+    <h1 style="color: rgb(232, 253, 0);">вы Выйграли</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZ2BQ0lQQv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p> ВЫ набрали : <span class="result">0</span> очков</p>
+    <p> Рекорд : <span class="recordv">0</span> очков</p>
+    <div class="interval"> 
+      <button id="victoryreset" class="delreset">
+        <p>Начать заново</p>
+      </button>
+      <form action="index.html">
+        <button class="delreset">
+          <p>На 1 Игрока</p>
+        </button>
+      </form>
+   </div>
+  </div>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js'></script><script  src="secondplayer.js"></script>
+
+</body>
+</html>
